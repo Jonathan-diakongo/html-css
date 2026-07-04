@@ -4,19 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: darkgrey;
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        
+        td.numero {
+            text-align: right;
+        }
+
+        tfoot {
+            background-color: darkgrey;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <!--
+        HIERARQUIA PARA TABELAS GRANDES
+        thead
+            th, tr, td
+        tbody
+            th, tr, td
+        tfoot
+            th, tr, td
+    -->
     <h1>Uso de tabelas Grandes</h1>
-    <thead>
-
-    </thead>
-
-    <tbody>
-
-    </tbody>
-    
-    <tfoot>
-
-    </tfoot>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="numero">1.246.700</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="numero">6.645.435</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">4.777.588</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th>Total de habitante</th>
+                <td class="numero"><strong>2.786.243</strong></td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
