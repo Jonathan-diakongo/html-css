@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídeas em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios despositivos</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="img flexsivel">
+    </picture>
+    <p></p>
+    <h1>Colocando audio no meu site</h1>
+    <audio controls preload="metadata">
+        <source src="midia/Pop Smoke - For The Night (Lyrics) ft. Lil Baby _(360P)_20240517_053137.mp3" type="audio/mpeg">
+        <source src="midia/Pop Smoke - For The Night (Lyrics) ft. Lil Baby _(360P)_20240517_053137.ogg" type="audio/ogg">
+        <p>infelizmente esté navegador não suporta reprodução de audio!   <a href="midia/Pop Smoke - For The Night (Lyrics) ft. Lil Baby _(360P)_20240517_053137.mp3"><strong>click aqui pra fazer o dowload do arquivo</strong></a></p>
+    </audio>
+</body>
+</html>
