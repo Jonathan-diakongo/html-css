@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .colnome {
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exrcício de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="colnome">
+            <col class="colsexo">
+            <col class="colidade">
+            <col class="colprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Garcia Rafael</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Presidente<br>(Da união Africana e de Angola)</td>
+        </tr>
+         <tr>
+            <td>Marquinha Tiago</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Doutora <br>(Hospital Central dos USA)</td>
+        </tr>
+         <tr>
+            <td>Leonel Alves</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Roteirista(Dono da mappa)</td>
+        </tr>
+         <tr>
+            <td>Luzia Chissingui</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Empreendedora <br> (CEO da apple)</td>
+        </tr>
+         <tr>
+            <td>Valdemiro Dos santos</td>
+            <td>M</td>
+            <td>29</td>
+            <td>Engenheiro de Telecomunicações <br>(Dono do Vale do Silício)</td>
+        </tr>
+         <tr>
+            <td>Jonathan</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Desempregado<br>(Cheio de dividas)</td>
+        </tr>
+    </table>
+</body>
+</html>
